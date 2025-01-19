@@ -24,7 +24,7 @@ public class Walk {
 			Particle p = new Particle(n);
 			int d = p.simulateTrial();
 			double t = walktime.stopTimer();
-			System.out.printf("%-15d %-15d %-15d %-15.2f%n", n, i + 1, d, t);		
+			System.out.printf("%-15d %-15d %-15d %-15.3f%n", n, i + 1, d, t);		
 		}
 	}
 }

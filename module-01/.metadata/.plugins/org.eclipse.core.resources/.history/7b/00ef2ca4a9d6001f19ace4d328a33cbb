@@ -1,0 +1,28 @@
+package diffusion;
+
+public class Timer {
+	long startTime;
+	boolean running;
+	long endTime;
+	
+	public Timer() {
+		startTimer();
+	}
+	
+	public void startTimer() {
+		startTime = System.nanoTime();
+		running = true;
+	}
+	
+	public void stopTimer() {
+		endTime = System.nanoTime();
+		running = false;
+	}
+	
+	public double getRuntime() {
+		return (endTime - startTime) / 1000000000.0;
+	}
+	
+	
+	
+}
