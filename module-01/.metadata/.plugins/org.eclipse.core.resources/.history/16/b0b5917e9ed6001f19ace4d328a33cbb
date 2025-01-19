@@ -1,0 +1,5 @@
+package diffusion;
+
+class Particle {
+
+}

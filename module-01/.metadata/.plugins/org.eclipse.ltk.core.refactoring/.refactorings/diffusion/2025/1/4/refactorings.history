@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;diffusion.Trial&apos; to &apos;Walk&apos;&#x0A;- Original project: &apos;diffusion&apos;&#x0A;- Original element: &apos;diffusion.Trial&apos;&#x0A;- Renamed element: &apos;diffusion.Walk&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Trial&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;diffusion{Trial.java[Trial" matchStrategy="1" name="Walk" qualified="false" references="true" similarDeclarations="false" stamp="1737316555152" textual="false" version="1.0"/>
+</session>
