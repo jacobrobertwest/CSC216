@@ -1,7 +1,6 @@
 package diffusion;
 
 public class Main {
-
 	public static void main(String[] args) {
 		System.out.println("# Steps (N)    Trial # (M)    Final Pos (D)    Trial Runtime (ms)");
 		System.out.println("----------------------------------------------------------------");
