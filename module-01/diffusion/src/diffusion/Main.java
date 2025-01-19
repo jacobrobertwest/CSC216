@@ -9,23 +9,23 @@ public class Main {
 		// Initialize main timer, starting runtime stopwatch
 		Timer mainTimer = new Timer();
 		
-        // Create an array of Walk objects to iterate over
-        Walk[] walks = new Walk[5];
-
-        // Initialize the array with Walk(n,m) objects of different values of n with m = 10
-        walks[0] = new Walk(10, 10);
-        walks[1] = new Walk(100, 10);
-        walks[2] = new Walk(500, 10);
-        walks[3] = new Walk(1000, 10);
-        walks[4] = new Walk(10000, 10);
-
-        // Loop through the array and call simulateWalk()
-        for (Walk walk : walks) {
-            walk.simulateWalk();
-        }
-        
-        // Stop main timer and capture total runtime in seconds
-        double runtime = mainTimer.stopTimer() / 1000.0;
-        System.out.printf("Total runtime: %.3f seconds%n", runtime);
+	        // Create an array of Walk objects to iterate over
+	        Walk[] walks = new Walk[5];
+	
+	        // Initialize the array with Walk(n,m) objects of different values of n with m = 10
+	        walks[0] = new Walk(10, 10);
+	        walks[1] = new Walk(100, 10);
+	        walks[2] = new Walk(500, 10);
+	        walks[3] = new Walk(1000, 10);
+	        walks[4] = new Walk(10000, 10);
+	
+	        // Loop through the array and call simulateWalk()
+	        for (Walk walk : walks) {
+	            walk.simulateWalk();
+	        }
+	        
+	        // Stop main timer and capture total runtime in seconds
+	        double runtime = mainTimer.stopTimer() / 1000.0;
+	        System.out.printf("Total runtime: %.3f seconds%n", runtime);
     }
 }
