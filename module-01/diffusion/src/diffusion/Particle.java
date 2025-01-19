@@ -13,11 +13,11 @@ public class Particle {
 	
 	// Parameterized constructor passing n in as a parameter, with validation
 	public Particle(int n) {
-        if (n < 0) {
-            throw new IllegalArgumentException("n cannot be negative");
-        }
-        this.n = n; 
-    }
+	        if (n < 0) {
+	            throw new IllegalArgumentException("n cannot be negative");
+	        }
+	        this.n = n; 
+    	}
 	
 	// Simulate a trial of a 1D random walk with n steps, returns position after simulation
 	public int simulateTrial() {
