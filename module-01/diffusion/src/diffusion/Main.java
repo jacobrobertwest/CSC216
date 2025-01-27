@@ -13,11 +13,11 @@ public class Main {
         Walk[] walks = new Walk[5];
 
         // Initialize the array with Walk(n,m) objects of different values of n with m = 10
-        walks[0] = new Walk(10, 10);
-        walks[1] = new Walk(100, 10);
-        walks[2] = new Walk(500, 10);
-        walks[3] = new Walk(1000, 10);
-        walks[4] = new Walk(10000, 10);
+        walks[0] = new Walk(11000, 10);
+        walks[1] = new Walk(21000, 10);
+        walks[2] = new Walk(31000, 10);
+        walks[3] = new Walk(41000, 10);
+        walks[4] = new Walk(51000, 10);
 
         // Loop through the array and call simulateWalk()
         for (Walk walk : walks) {
