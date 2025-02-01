@@ -51,22 +51,22 @@ public class IHaveGotThePower {
 	
 	
 	public static void main(String[] args) {
-		int[] nums_x = {1,2,5,10,25};
-		int[] nums_n = {1,2,5,10,25};
+		int[] nums_x = {1,2,5,10,25,100,200};
+		int[] nums_n = {1,2,5,10,25,100,200,10000,250000};
 		long startTime, endTime, duration, answer;
 		
 		for (int x : nums_x) {
 			for (int n : nums_n) {
 				System.out.printf("Testing 3 functions on x = %d and n = %d\n",x,n);
 				
-				// Naive
-				startTime = System.nanoTime();
-				answer = naivePower(x,n);
-				endTime = System.nanoTime();
-				duration = endTime - startTime;
-				System.out.println("Matches Math.pow answer: " + (answer == Math.pow(x, n)));
-				System.out.printf("naivePower duration: %d nanoseconds\n", duration);
-				
+//				// Naive
+//				startTime = System.nanoTime();
+//				answer = naivePower(x,n);
+//				endTime = System.nanoTime();
+//				duration = endTime - startTime;
+//				System.out.println("Matches Math.pow answer: " + (answer == Math.pow(x, n)));
+//				System.out.printf("naivePower duration: %d nanoseconds\n", duration);
+//				
 				// unoptimized DC
 				startTime = System.nanoTime();
 				answer = unoptimizedDCPower(x,n);
@@ -76,13 +76,13 @@ public class IHaveGotThePower {
 				System.out.printf("unoptimizedDCPower duration: %d nanoseconds\n", duration);
 				
 				// Optimized DC
-				startTime = System.nanoTime();
-				answer = optimizedDCPower(x,n);
-				endTime = System.nanoTime();
-				duration = endTime - startTime;
-				System.out.println("Matches Math.pow answer: " + (answer == Math.pow(x, n)));
-				System.out.printf("optimizedDCPower duration: %d nanoseconds\n", duration);
-				System.out.println();
+//				startTime = System.nanoTime();
+//				answer = optimizedDCPower(x,n);
+//				endTime = System.nanoTime();
+//				duration = endTime - startTime;
+//				System.out.println("Matches Math.pow answer: " + (answer == Math.pow(x, n)));
+//				System.out.printf("optimizedDCPower duration: %d nanoseconds\n", duration);
+//				System.out.println();
 			}
 		}
 		
