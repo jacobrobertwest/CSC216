@@ -11,11 +11,11 @@ public class Walk {
 	
 	// Parameterized constructor passing m in as a parameter, with validation
 	public Walk(int n, int m) {
-        if (m < 0) {
-            throw new IllegalArgumentException("m cannot be negative");
-        }
-        this.m = m;
-        this.n = n;
+	        if (m < 0) {
+	            throw new IllegalArgumentException("m cannot be negative");
+	        }
+	        this.m = m;
+	        this.n = n;
 	}
 	
 	public void simulateWalk() {
