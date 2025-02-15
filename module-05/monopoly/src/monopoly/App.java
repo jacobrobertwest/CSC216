@@ -22,7 +22,7 @@ public class App {
 		 
 		monopolyBoard.step();
 		 
-		System.out.println(monopolyBoard.currentNode); // This should print "Mediteranean Avenue" to the console
+		System.out.println(monopolyBoard.currentNode); // This should print "Mediterranean Avenue" to the console
 		 
 		monopolyBoard.step();
 		monopolyBoard.step();
@@ -34,7 +34,7 @@ public class App {
 		  monopolyBoard.step();
 		}
 		 
-		System.out.println(monopolyBoard.currentNode); // This should print "Mediteranean Avenue" to the console since we have looped back around
+		System.out.println(monopolyBoard.currentNode); // This should print "Mediterranean Avenue" to the console since we have looped back around
 
 	}
 
