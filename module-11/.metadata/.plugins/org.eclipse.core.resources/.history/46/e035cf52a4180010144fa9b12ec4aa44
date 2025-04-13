@@ -1,0 +1,17 @@
+package magazineClippings;
+
+public class MagazineClippings {
+	
+	public boolean canCreateNote(String note, String[] articles) {
+		return true;
+	}
+
+	public static void main(String[] args) {
+		MagazineClippings mc = new MagazineClippings();
+		System.out.println(mc.canCreateNote("a", new String[] {"a"}) == true);
+		System.out.println(mc.canCreateNote("a", new String[] {"a", "b"}) == true);
+		System.out.println(mc.canCreateNote("abc", new String[] {"a", "b", "c"}) == true);
+		System.out.println(mc.canCreateNote("The bird is red!", new String[] {"I write a lot.", "To and fro.", "Here be deadly dragons!"}) == true);
+	}
+
+}

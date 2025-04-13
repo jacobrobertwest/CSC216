@@ -1,0 +1,31 @@
+package magazineClippings;
+
+public class MagazineClippings {
+	
+	public boolean canCreateNote(String note, String[] articles) {
+		return true;
+	}
+
+
+	public static void main(String[] args) {
+		MagazineClippings mc = new MagazineClippings();
+		System.out.println(mc.canCreateNote("a", new String[] {"a"}) == true);
+		
+	}
+		
+		
+		a	[“a”]	true
+		a	[“ab”]	true
+		a	[“a”, “b”]	true
+		abc	[“a”, “b”, “c”]	true
+		The bird is red!	[“I write a lot.”, “To and fro.”, “Here be deadly dragons!“]	true
+		a	[“b”]	false
+		a	[“bc”]	false
+		a	[“b”, “c”]	false
+		abc	[“a”, “b”, “d”]	false
+		The bird is red	[“I write a lot.”, “To and fro.”]	false
+		The bird is red!	[“I write a lot.”, “To and fro.”, “Here be deadly dragons”]
+
+	}
+
+}

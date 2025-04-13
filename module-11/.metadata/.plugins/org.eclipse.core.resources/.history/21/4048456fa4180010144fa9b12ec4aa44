@@ -1,0 +1,32 @@
+package magazineClippings;
+import java.util.HashSet;
+import java.util.Set;
+
+public class MagazineClippings {
+	
+	public boolean canCreateNote(String note, String[] articles) {
+        Set<Character> charSet = new HashSet<>();
+        
+        for (String word : articles) {
+            for (char c : word.toCharArray()) {
+                charSet.add(c);
+            }
+        }
+        for (char c : note.toCharArray()) {
+            if (!charSet.contains(c)) {
+            	return false;
+            }
+        }
+        return true;
+        
+	}
+
+	public static void main(String[] args) {
+		MagazineClippings mc = new MagazineClippings();
+		System.out.println(mc.canCreateNote("a", new String[] {"a"}) == true);
+		System.out.println(mc.canCreateNote("a", new String[] {"a", "b"}) == true);
+		System.out.println(mc.canCreateNote("abc", new String[] {"a", "b", "c"}) == true);
+		System.out.println(mc.canCreateNote("The bird is red!", new String[] {"I write a lot.", "To and fro.", "Here be deadly dragons!"}) == true);
+	}
+
+}
