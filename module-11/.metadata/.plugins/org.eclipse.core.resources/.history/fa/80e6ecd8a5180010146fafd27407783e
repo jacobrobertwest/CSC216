@@ -31,7 +31,7 @@ public class MagazineClippings {
 		System.out.println(mc.canCreateNote("a", new String[] {"a"}) == true);
 		System.out.println(mc.canCreateNote("a", new String[] {"a", "b"}) == true);
 		System.out.println(mc.canCreateNote("abc", new String[] {"a", "b", "c"}) == true);
-		System.out.println(mc.canCreateNote("The bird is red?", new String[] {"I write a lot.", "To and fro.", "Here be deadly dragons!"}) == true);
+		System.out.println(mc.canCreateNote("The bird is red!", new String[] {"I write a lot.", "To and fro.", "Here be deadly dragons!"}) == true);
 	}
 
 }
