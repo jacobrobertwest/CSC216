@@ -8,7 +8,6 @@ public class Main {
     final static Random rand = new Random();
 
     public static void main(String[] args) {
-        // Print column headers
         System.out.printf("%-8s %-8s %-6s %-10s %-8s%n", "Flips", "Trial", "P", "numHeads", "E");
 
         for (int flips : n) {
@@ -25,7 +24,6 @@ public class Main {
 
                     int exp = (int) Math.round(bias * flips);
 
-                    // Print results in table format
                     System.out.printf("%-8d %-8d %-6.2f %-10d %-8d%n", flips, i, bias, headsCounter, exp);
                 }
             }
