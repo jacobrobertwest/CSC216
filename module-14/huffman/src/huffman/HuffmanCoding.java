@@ -87,7 +87,7 @@ public class HuffmanCoding {
     }
 
     public static void main(String[] args) {
-        String text = "Hello World";
+        String text = "こんにちは";
 
         System.out.println("Compressing: " + text);
         Result compressed = compress(text);
